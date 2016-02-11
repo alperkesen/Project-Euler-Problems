@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 given_number = 600851475143

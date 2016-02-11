@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 answer = 0
@@ -14,5 +14,5 @@ def prime_numbers(limit):
 
 for x in prime_numbers(2000000):
     answer += x
--
+
 print answer

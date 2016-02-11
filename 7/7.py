@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 nth_prime_number = 1
@@ -13,9 +13,8 @@ while nth_prime_number < 10001:
             if prime == prime_number_list[-1]:
                 prime_number_list.append(prime_number);
                 nth_prime_number += 1
-
     prime_number += 1
 
-answer = prime_number - 1
+answer = prime_number-1
 print answer
 

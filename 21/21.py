@@ -9,9 +9,9 @@ def divisor_generator(n):
         if n % i == 0:
             yield i
             if i*i != n and n/i != n:
-        large_divisors.append(n / i)
+                large_divisors.append(n / i)
     for divisor in reversed(large_divisors):
-    yield divisor
+        yield divisor
 
 answer = 0
 number = 1
@@ -22,7 +22,6 @@ while number < 10000:
     if real_number == number and number != divisorsSum:
         answer += number
     number += 1
-
 
 print answer
 

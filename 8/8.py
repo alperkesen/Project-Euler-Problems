@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 digits = "73167176531330624919225119674426574742355349194934\
@@ -29,10 +29,8 @@ while (starter_digit + 12) <= 999:
     product = 1
     for x in xrange(starter_digit, starter_digit + 13):	    
 	    product *= int(digits[x])
-
     if product > greatest_product:
-	    greatest_product = product
-	    
-    starter_digit += 1
+        greatest_product = product
+	starter_digit += 1
 
 print greatest_product

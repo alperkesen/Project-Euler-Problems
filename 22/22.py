@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 import string
@@ -148,10 +148,10 @@ nth_name = 0
 answer = 0
 
 while nth_name < len(names):
-	points = 0
-	for letters in names[nth_name]:
-		points += string.uppercase.index(letters) + 1 
-	answer += (points * (nth_name + 1))
-	nth_name += 1
+    points = 0
+    for letters in names[nth_name]:
+        points += string.uppercase.index(letters) + 1 
+    answer += (points * (nth_name + 1))
+    nth_name += 1
 
 print answer

@@ -106,7 +106,7 @@ answer = 0
 digit_list = digits.split(" ")
 
 for x in digit_list:
-	answer += int(x)
+    answer += int(x)
 
 print int(str(answer)[:10])
 

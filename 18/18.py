@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 digits = "75  \
@@ -19,31 +19,26 @@ digits = "75  \
 
 digit_list = digits.split("  ")[::-1]
 new_list = []
-
-for x in digit_list:
-	new_list.append(x.split(" "))
-
 columns = 0
 
+for x in digit_list:
+    new_list.append(x.split(" "))
+
 while columns < len(new_list) - 1:
-	rows = 0
-
-	while rows < len(new_list[columns]) - 1:
-		digits = new_list[columns]
-		digits_up = new_list[columns + 1]
-
-		first = int(digits[rows])
-		second = int(digits[rows + 1])
-
-		if first > second:
-			digits_up[rows] = int(digits_up[rows]) + first)
-		elif second > first:
-			digits_up[rows] = int(digits_up[rows]) + second
-		else:
-			digits_up[rows] = int(digits_up[rows]) + first
-
-		rows += 1
-	columns += 1
+    rows = 0
+    while rows < len(new_list[columns]) - 1:
+        digits = new_list[columns]
+        digits_up = new_list[columns + 1]
+        first = int(digits[rows])
+        second = int(digits[rows + 1])
+        if first > second:
+            digits_up[rows] = int(digits_up[rows]) + first)
+        elif second > first:
+            digits_up[rows] = int(digits_up[rows]) + second
+        else:
+            digits_up[rows] = int(digits_up[rows]) + first
+        rows += 1
+    columns += 1
 	
 print new_list[-1][0]
 
