@@ -28,43 +28,43 @@ list_by_line = digits.split("  ")
 # This is for horizontal
 
 for x in xrange(0,20):
-	for y in xrange(0, 17):
-		result = int(list_by_line[x].split(" ")[y]) \
-		* int(list_by_line[x].split(" ")[y+1]) \
-		* int(list_by_line[x].split(" ")[y+2]) \
-		* int(list_by_line[x].split(" ")[y+3])
-		if result > max_product:
-			max_product = result
+    for y in xrange(0, 17):
+        result = int(list_by_line[x].split(" ")[y]) \
+        * int(list_by_line[x].split(" ")[y+1]) \
+        * int(list_by_line[x].split(" ")[y+2]) \
+        * int(list_by_line[x].split(" ")[y+3])
+        if result > max_product:
+            max_product = result
 
 # This is for vertical
 
 for x in xrange(0, 17):
-	for y in xrange(0, 20):
-		result = int(list_by_line[x].split(" ")[y]) \
-		* int(list_by_line[x+1].split(" ")[y]) \
-		* int(list_by_line[x+2].split(" ")[y]) \
-		* int(list_by_line[x+3].split(" ")[y])
-		if result > max_product:
-			max_product = result
+    for y in xrange(0, 20):
+        result = int(list_by_line[x].split(" ")[y]) \
+        * int(list_by_line[x+1].split(" ")[y]) \
+        * int(list_by_line[x+2].split(" ")[y]) \
+        * int(list_by_line[x+3].split(" ")[y])
+        if result > max_product:
+            max_product = result
 
 # This is for diagonal
 
 for x in xrange(0, 17):
-	for y in xrange(0, 17):
-		result = int(list_by_line[x].split(" ")[y]) \
-		* int(list_by_line[x+1].split(" ")[y+1]) \
-		* int(list_by_line[x+2].split(" ")[y+2]) \
-		* int(list_by_line[x+3].split(" ")[y+3])
-		if result > max_product:
-			max_product = result
+    for y in xrange(0, 17):
+        result = int(list_by_line[x].split(" ")[y]) \
+        * int(list_by_line[x+1].split(" ")[y+1]) \
+        * int(list_by_line[x+2].split(" ")[y+2]) \
+        * int(list_by_line[x+3].split(" ")[y+3])
+        if result > max_product:
+            max_product = result
 
 for x in xrange(0, 17):
-	for y in xrange(3, 20):
-		result = int(list_by_line[x].split(" ")[y]) \
-		* int(list_by_line[x+1].split(" ")[y-1]) \
-		* int(list_by_line[x+2].split(" ")[y-2]) \
-		* int(list_by_line[x+3].split(" ")[y-3])
-		if result > max_product:
-			max_product = result
+    for y in xrange(3, 20):
+        result = int(list_by_line[x].split(" ")[y]) \
+        * int(list_by_line[x+1].split(" ")[y-1]) \
+        * int(list_by_line[x+2].split(" ")[y-2]) \
+        * int(list_by_line[x+3].split(" ")[y-3])
+        if result > max_product:
+            max_product = result
 
 print max_product

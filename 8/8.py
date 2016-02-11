@@ -28,7 +28,7 @@ starter_digit = 0
 while (starter_digit + 12) <= 999:
     product = 1
     for x in xrange(starter_digit, starter_digit + 13):	    
-	   product *= int(digits[x])
+	    product *= int(digits[x])
 
     if product > greatest_product:
 	    greatest_product = product

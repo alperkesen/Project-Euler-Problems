@@ -7,12 +7,12 @@ prime_number_list = [2]
 
 while nth_prime_number < 10001:
     for prime in prime_number_list:
-    	if prime_number % prime == 0:
-    		break
+        if prime_number % prime == 0:
+            break
         else:
-        	if prime == prime_number_list[-1]:
-        	    prime_number_list.append(prime_number);
-        	    nth_prime_number += 1
+            if prime == prime_number_list[-1]:
+                prime_number_list.append(prime_number);
+                nth_prime_number += 1
 
     prime_number += 1
 
